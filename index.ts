@@ -7,7 +7,10 @@ import { Observable } from 'rxjs';
 import { ajax, AjaxResponse, AjaxRequest, AjaxError } from 'rxjs/ajax';
 const URL: string =
   'https://eu-central-1.aws.data.mongodb-api.com/app/kvaas-giwjg/endpoint';
-var key: string;
+//variabile che conterrà la chiave generata e settata con un valore
+var key: string; 
+
+//eevent listener collegati al click dei 3 bottoni - chiamano ciascuno una funzione - callbak
 document.getElementById('newbtn').addEventListener('click', newKey);
 document.getElementById('setbtn').addEventListener('click', setValue);
 document.getElementById('getbtn').addEventListener('click', getValue);
